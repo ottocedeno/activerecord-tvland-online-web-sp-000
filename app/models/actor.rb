@@ -8,12 +8,12 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    Array.new.tap do |roles|
-      self.characters.each do |character|
-        character.name
-        roles << "#{character.name} - #{character.show.name}"
-      end
-    end
+    # Array.new.tap do |roles|
+    #   self.characters.each do |character|
+    #     character.name
+    #     roles << "#{character.name} - #{character.show.name}"
+    #   end
+    # end
 
     self.characters.map do |character|
       "#{character.name} - #{character.show.name}"
