@@ -10,7 +10,8 @@ class Actor < ActiveRecord::Base
   def list_roles
     binding.pry
     roles = Array.new
-
+    self.characters.each do |character|
+    end
 
     roles
   end
