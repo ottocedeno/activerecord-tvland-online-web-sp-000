@@ -11,6 +11,7 @@ class Actor < ActiveRecord::Base
     binding.pry
     roles = Array.new
     self.characters.each do |character|
+      binding.pry
     end
 
     roles
