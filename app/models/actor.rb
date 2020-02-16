@@ -14,5 +14,8 @@ class Actor < ActiveRecord::Base
         roles << "#{character.name} - #{character.show.name}"
       end
     end
+
+    self.characters.map do |character|
+    end
   end
 end
